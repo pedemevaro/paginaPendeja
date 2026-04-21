@@ -13,33 +13,7 @@ body{
     position: absolute;
 }
 
-/* button{
-    font-size: 20px;
-    color:white;
-    padding: 20px;
-    border-radius: 5px;
+.botonLoco{
+    position: absolute;
+    transition: top 0.5s ease, left 0.5s ease !important;
 }
-
-button:hover{
-    cursor: pointer;
-}
-
-#btnSI{
-    background-color: rgb(122, 202, 97); 
-    border:1px solid rgb(122, 202, 97);
-}
-
-#btnSI:hover{
-    background-color:white; 
-    color:rgb(122, 202, 97);
-}
-
-#btnNO{
-    background-color: rgb(224, 77, 77);
-    border:1px solid rgb(224, 77, 77);
-}
-
-#btnNO:hover{
-    background-color:white; 
-    color: rgb(224, 77, 77);
-} */
