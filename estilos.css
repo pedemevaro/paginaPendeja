@@ -17,3 +17,12 @@ body{
     position: absolute;
     transition: top 0.5s ease, left 0.5s ease !important;
 }
+
+#mano {
+  position: absolute;
+  font-size: 30px;
+  top: 0px;
+  left: 0px;
+  transition: transform 0.2s;
+  opacity: 0;
+}

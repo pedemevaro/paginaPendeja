@@ -26,11 +26,11 @@ function inicializar(){
         left: "11%",
     });
 
-    $("#labelTexto").text("¿ME QUIERES?");
+    $("#labelTexto").text("¿ME QUIERES? 🥰");
 
     $("#labelTexto").css({
         top: "20%",
-        left: "22%",
+        left: "16%",
     });
     
     $("#txtValor").text("1");
@@ -39,7 +39,7 @@ function inicializar(){
 }
 
 function clickSI(){
-    $("#labelTexto").text("Así me gusta, sumisa cual gusano");
+    $("#labelTexto").text("Así me gusta, sumisa cual gusana");
 
     $("#labelTexto").css({
         left: "12%",
@@ -48,10 +48,10 @@ function clickSI(){
     $("#btnSI").css({display: "none"});
     $("#btnNO").css({display: "none"});
     $("#imagenGusano").css({display: "inline-block"});
+    
 }
 
 function clickNO(){
-    //$("#labelTexto").text("Creo que te has equivocado de botón. Repito. ¿Me quieres?");
     console.log("Entra en NO");
 
     let valor = $("#txtValor").text();
@@ -71,12 +71,12 @@ function clickNO(){
 
             $("#txtValor").text("2");
 
-            break;
+        break;
 
         case "2":
             $("#btnSI").css({
                 "font-size": "1.6em",
-                left: "50%"
+                left: "45%"
             });
 
             $("#btnNO").css({
@@ -85,12 +85,12 @@ function clickNO(){
 
             $("#txtValor").text("3");
 
-            break;
+        break;
 
         case "3":
             $("#btnSI").css({
                 "font-size": "1.9em",
-                left: "45%"
+                left: "40%"
             });
 
             $("#btnNO").css({
@@ -99,12 +99,12 @@ function clickNO(){
 
             $("#txtValor").text("4");
 
-            break;
+        break;
 
         case "4":
             $("#btnSI").css({
                 "font-size": "2.1em",
-                left: "40%"
+                left: "35%"
             });
 
             $("#btnNO").css({
@@ -113,21 +113,23 @@ function clickNO(){
 
             $("#txtValor").text("5");
 
-            break;
+        break;
 
         case "5":
             $("#btnSI").css({
                 "font-size": "3em",
-                left: "15%"
+                left: "5%"
             });
 
             $("#btnNO").css({
                 top: "9%"
             });
 
+            $("#btnSI").text("Por supuesto que sí, mi amor");
+
             $("#txtValor").text("6");
 
-            break;
+        break;
 
         case "6":
 
@@ -138,19 +140,86 @@ function clickNO(){
 
              $("#txtValor").text("7");
 
-            break;
+        break;
 
         case "7":
 
             $("#btnNO").css({
-                top: "59%",
+                top: "70%",
                 left: "34%"
             });
 
              $("#txtValor").text("8");
 
-            break;
+        break;
+
+        case "8":
+            alert("Última oportunidad ehh")
+
+            $("#txtValor").text("9");
+        break;
+
+        case "9":
+            alert("Esta si que es la última de verdad, la de antes era de prueba y la has fallado 😔")
+
+            $("#txtValor").text("10");
+        break;
+
+        case "10":
+            alert("¿En serio tanto rechazo merezco? 👉👈")
+
+            $("#txtValor").text("11");
+        break;
+
+        case "11":
+            alert("Esta es la última de la buena, si no le das a que si le doy yo 😡")
+
+            $("#txtValor").text("12");
+        break;
+
+        case "12":
+            
+            setTimeout(animarClick, 1000);
+
+        break;
     }
 
     
 }
+
+function animarClick() {
+
+    let btn = $("#btnSI");
+    let pos = btn.position();
+
+    // 1. aparece en esquina
+    $("#mano").css({
+      top: "20px",
+      left: "20px",
+      opacity: 1
+    });
+
+    // 2. se mueve suavemente al botón
+    $("#mano").animate({
+      top: pos.top + 20,
+      left: pos.left + 20
+    }, 1000, function () {
+
+      // 3. efecto de click visual
+      $("#mano").css({
+        transform: "scale(0.8)"
+      });
+
+      setTimeout(function () {
+        $("#mano").css({
+          transform: "scale(1)"
+        });
+
+        // 4. disparar click real
+        btn.trigger("click");
+
+        $("#mano").fadeOut(300);
+      }, 200);
+
+    });
+  }
