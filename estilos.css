@@ -1,19 +1,45 @@
 
 body{
-    background-color: rgb(239, 154, 241);
+    background-color: rgb(246, 202, 247) !important;
+    height: 100vh !important;
 }
 
 .contenedorPrincipal{
-    text-align: center;
+    position: relative;
+    height: 100vh;
+}
 
+.positionAbsolute{
+    position: absolute;
+}
+
+/* button{
+    font-size: 20px;
+    color:white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 #btnSI{
-    background-color: rgb(122, 202, 97);
-    color:white;
+    background-color: rgb(122, 202, 97); 
+    border:1px solid rgb(122, 202, 97);
+}
+
+#btnSI:hover{
+    background-color:white; 
+    color:rgb(122, 202, 97);
 }
 
 #btnNO{
     background-color: rgb(224, 77, 77);
-    color:white;
+    border:1px solid rgb(224, 77, 77);
 }
+
+#btnNO:hover{
+    background-color:white; 
+    color: rgb(224, 77, 77);
+} */
