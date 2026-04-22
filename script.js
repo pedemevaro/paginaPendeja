@@ -154,32 +154,118 @@ function clickNO(){
         break;
 
         case "8":
-            alert("Última oportunidad ehh")
+            $("#labelAlert").text("Última oportunidad ehh");
+            $("#divTemporal").show();
+
+            $("#divTemporal").css({
+                display: "block"
+            });
+
+            $("#overlay").fadeIn();
+            $("#divTemporal").fadeIn();
+
+            setTimeout(function() {
+                $("#divTemporal").css({
+                    display: "none"
+                });
+
+                $("#divTemporal").fadeOut();
+                $("#overlay").fadeOut();
+            }, 3000);
 
             $("#txtValor").text("9");
         break;
 
         case "9":
-            alert("Esta si que es la última de verdad, la de antes era de prueba y la has fallado 😔")
+            $("#labelAlert").text("Esta si que es la última de verdad, la de antes era de prueba y la has fallado 😔");
+            $("#divTemporal").show();
+
+            $("#divTemporal").css({
+                display: "block"
+            });
+
+            $("#overlay").fadeIn();
+            $("#divTemporal").fadeIn();
+
+            setTimeout(function() {
+                $("#divTemporal").css({
+                    display: "none"
+                });
+
+                $("#divTemporal").fadeOut();
+                $("#overlay").fadeOut();
+            }, 3000);
 
             $("#txtValor").text("10");
         break;
 
         case "10":
-            alert("¿En serio tanto rechazo merezco? 👉👈")
+            $("#labelAlert").text("¿En serio merezco tanto rechazo? 👉👈");
+            $("#divTemporal").show();
+
+            $("#divTemporal").css({
+                display: "block"
+            });
+
+            $("#overlay").fadeIn();
+            $("#divTemporal").fadeIn();
+
+            setTimeout(function() {
+                $("#divTemporal").css({
+                    display: "none"
+                });
+
+                $("#divTemporal").fadeOut();
+                $("#overlay").fadeOut();
+            }, 3000);
 
             $("#txtValor").text("11");
         break;
 
         case "11":
-            alert("Esta es la última de la buena, si no le das a que si le doy yo 😡")
+            $("#labelAlert").text("Esta es la última de la buena, si no le das a que si le doy yo 😡");
+            $("#divTemporal").show();
+
+            $("#divTemporal").css({
+                display: "block"
+            });
+
+            $("#overlay").fadeIn();
+            $("#divTemporal").fadeIn();
+
+            setTimeout(function() {
+                $("#divTemporal").css({
+                    display: "none"
+                });
+
+                $("#divTemporal").fadeOut();
+                $("#overlay").fadeOut();
+            }, 3000);
 
             $("#txtValor").text("12");
         break;
 
         case "12":
-            
-            setTimeout(animarClick, 1000);
+            $("#labelAlert").text("PUES LE DOY YO, PAYASA");
+            $("#divTemporal").show();
+
+            $("#divTemporal").css({
+                display: "block"
+            });
+
+            $("#overlay").fadeIn();
+            $("#divTemporal").fadeIn();
+
+            setTimeout(function() {
+                $("#divTemporal").css({
+                    display: "none"
+                });
+
+                $("#divTemporal").fadeOut();
+                $("#overlay").fadeOut();
+
+                setTimeout(animarClick, 1000);
+            }, 3000);
 
         break;
     }
