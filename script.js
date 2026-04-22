@@ -18,20 +18,15 @@ function inicializar(){
 
     $("#btnSI").css({
         top: "40%",
-        left: "60%",
+        left: "58%",
     });
 
     $("#btnNO").css({
         top: "40%",
-        left: "11%",
+        left: "7%",
     });
 
     $("#labelTexto").text("¿ME QUIERES? 🥰");
-
-    $("#labelTexto").css({
-        top: "20%",
-        left: "16%",
-    });
     
     $("#txtValor").text("1");
 
@@ -39,11 +34,7 @@ function inicializar(){
 }
 
 function clickSI(){
-    $("#labelTexto").text("Así me gusta, sumisa cual gusana");
-
-    $("#labelTexto").css({
-        left: "12%",
-    });
+    $("#labelTexto").text("Así me gusta, sumisa cual gusana.");
 
     $("#btnSI").css({display: "none"});
     $("#btnNO").css({display: "none"});
@@ -118,7 +109,8 @@ function clickNO(){
         case "5":
             $("#btnSI").css({
                 "font-size": "3em",
-                left: "5%"
+                left: "5%",
+                right: "5%"
             });
 
             $("#btnNO").css({
@@ -154,6 +146,11 @@ function clickNO(){
         break;
 
         case "8":
+            $("#btnNO").css({
+                top: "30%",
+                left: "17%"
+            });
+
             $("#labelAlert").text("Última oportunidad ehh");
             $("#divTemporal").show();
 
@@ -171,12 +168,17 @@ function clickNO(){
 
                 $("#divTemporal").fadeOut();
                 $("#overlay").fadeOut();
-            }, 3000);
+            }, 1500);
 
             $("#txtValor").text("9");
         break;
 
         case "9":
+            $("#btnNO").css({
+                top: "83%",
+                left: "13%"
+            });
+
             $("#labelAlert").text("Esta si que es la última de verdad, la de antes era de prueba y la has fallado 😔");
             $("#divTemporal").show();
 
@@ -200,6 +202,11 @@ function clickNO(){
         break;
 
         case "10":
+            $("#btnNO").css({
+                top: "8%",
+                left: "40%"
+            });
+
             $("#labelAlert").text("¿En serio merezco tanto rechazo? 👉👈");
             $("#divTemporal").show();
 
@@ -223,6 +230,11 @@ function clickNO(){
         break;
 
         case "11":
+            $("#btnNO").css({
+                top: "31%",
+                left: "35%"
+            });
+
             $("#labelAlert").text("Esta es la última de la buena, si no le das a que si le doy yo 😡");
             $("#divTemporal").show();
 
@@ -240,7 +252,7 @@ function clickNO(){
 
                 $("#divTemporal").fadeOut();
                 $("#overlay").fadeOut();
-            }, 3000);
+            }, 3500);
 
             $("#txtValor").text("12");
         break;
@@ -252,6 +264,8 @@ function clickNO(){
             $("#divTemporal").css({
                 display: "block"
             });
+
+            $("#btnNO").css({display: "none"});
 
             $("#overlay").fadeIn();
             $("#divTemporal").fadeIn();
@@ -287,8 +301,8 @@ function animarClick() {
 
     // 2. se mueve suavemente al botón
     $("#mano").animate({
-      top: pos.top + 20,
-      left: pos.left + 20
+      top: pos.top + 80,
+      left: pos.left + 80
     }, 1000, function () {
 
       // 3. efecto de click visual

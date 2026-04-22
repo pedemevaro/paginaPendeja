@@ -1,12 +1,17 @@
 
 body{
-    background-color: rgb(246, 202, 247) !important;
+    background-color: rgb(160, 113, 161) !important;
     height: 100vh !important;
 }
 
 .contenedorPrincipal{
     position: relative;
     height: 100vh;
+}
+
+#labelTexto{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
 }
 
 .positionAbsolute{
@@ -16,6 +21,7 @@ body{
 .botonLoco{
     position: absolute;
     transition: top 0.5s ease, left 0.5s ease !important;
+    transition: font-size 0.5 ease !important;
 }
 
 #mano {
@@ -28,13 +34,14 @@ body{
 }
 
 #divTemporal{
-    position: absolute;
+    position: relative;
     background-color: aliceblue;
     padding: 0.5em;
     border-radius: 5px;
-    top:40%;
+    top:60%;
     display: none;
     z-index: 9999999999;
+    text-align: center;
 }
 
 #overlay{
@@ -46,4 +53,13 @@ body{
     background: rgba(0,0,0,0.6);
     display: none;
     z-index: 999;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+    width: 100%;
 }
