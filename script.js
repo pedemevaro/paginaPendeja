@@ -175,7 +175,7 @@ function clickNO(){
 
         case "9":
             $("#btnNO").css({
-                top: "83%",
+                top: "77%",
                 left: "13%"
             });
 
